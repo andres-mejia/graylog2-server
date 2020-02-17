@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-restricted-imports
 import { HelpBlock as BootstrapHelpBlock } from 'react-bootstrap';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { lighten } from 'polished';
 
 const HelpBlock = styled(BootstrapHelpBlock)(({ theme }) => css`
