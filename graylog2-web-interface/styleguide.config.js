@@ -9,7 +9,6 @@ module.exports = {
     'opensans-npm-webfont',
     'stylesheets/bootstrap-submenus.less',
     'toastr/toastr.less',
-    'rickshaw/rickshaw.css',
     'stylesheets/typeahead.less',
     'injection/builtins.js',
   ],
@@ -21,6 +20,23 @@ module.exports = {
     {
       name: 'Style guide',
       content: 'docs/styleguide.md',
+    },
+    {
+      name: 'Theming Details',
+      sections: [
+        {
+          name: 'ThemeProvider',
+          content: 'src/theme/docs/ThemeProvider.md',
+        },
+        {
+          name: 'Colors',
+          content: 'src/theme/docs/Colors.md',
+        },
+        {
+          name: 'Color Utilities',
+          content: 'src/theme/docs/Utilities.md',
+        },
+      ],
     },
     {
       name: 'Documentation',
