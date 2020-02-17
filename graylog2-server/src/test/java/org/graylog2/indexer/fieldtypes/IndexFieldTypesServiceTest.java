@@ -79,7 +79,7 @@ public class IndexFieldTypesServiceTest {
         assertThat(dto1).as("check that saving the DTO worked").isNotNull();
         assertThat(dto1.id()).isNotBlank();
         assertThat(dto1.indexName()).isEqualTo("graylog_0");
-        assertThat(dto1.fields()).containsOnly(
+        assertThat(dto1.fields()).containsOnly(ad
                 FieldTypeDTO.create("message", "text"),
                 FieldTypeDTO.create("source", "text"),
                 FieldTypeDTO.create("timestamp", "date"),
