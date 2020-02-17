@@ -4,15 +4,13 @@ import { InputGroup as BootstrapInputGroup } from 'react-bootstrap';
 import styled from 'styled-components';
 import { lighten } from 'polished';
 
-import teinte from 'theme/teinte';
-
-const InputGroup = memo(styled(BootstrapInputGroup)`
+const InputGroup = memo(styled(BootstrapInputGroup)(({ theme }) => css`
   .input-group-addon {
-    color: ${lighten(0.30, teinte.primary.tre)};
-    background-color: ${teinte.primary.due};
-    border-color: ${teinte.secondary.tre};
+    color: ${lighten(0.30, theme.color.primary.tre)};
+    background-color: ${theme.color.primary.due};
+    border-color: ${theme.color.secondary.tre};
   }
-`);
+`));
 
 InputGroup.Addon = memo(BootstrapInputGroup.Addon);
 InputGroup.Button = memo(BootstrapInputGroup.Button);

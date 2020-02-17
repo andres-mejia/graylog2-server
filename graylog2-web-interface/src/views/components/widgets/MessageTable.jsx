@@ -25,7 +25,8 @@ const Table = styled.table`
   width: 100%;
   word-break: break-all;
 
-  table.messages td, table.messages th {
+  table.messages td,
+  table.messages th {
     position: relative;
     left: 13px;
   }
@@ -97,16 +98,16 @@ const Table = styled.table`
     min-width: 50%;
 
     th {
-        font-weight: bold !important;
-        font-size: inherit !important;
+      font-weight: bold !important;
+      font-size: inherit !important;
     }
 
     th,
     td {
-        border: 1px #ccc solid !important;
-        left: 0;
-        padding: 5px;
-        position: static;
+      border: 1px #ccc solid !important;
+      left: 0;
+      padding: 5px;
+      position: static;
     }
   }
 `;
